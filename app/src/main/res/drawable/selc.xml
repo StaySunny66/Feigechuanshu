@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/wx_green" android:state_checked="true"/>
+    <item android:color="@color/wx_galary" android:state_checked="false"/>
+    <item android:drawableTint="@color/wx_green" android:state_checked="true" tools:ignore="StateListReachable" />
+    <item android:drawableTint="@color/wx_galary" android:state_checked="false"/>
+
+</selector>

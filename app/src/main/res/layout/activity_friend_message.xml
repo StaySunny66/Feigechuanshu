@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wx_back"
+    tools:context=".FriendMessage">
+
+    <ImageView
+        android:id="@+id/friendback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backleft" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="96dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/friendtx"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/friendname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="1dp"
+        android:text="晚晴"
+        android:textColor="@color/wx_black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/cardView7"
+        app:layout_constraintTop_toTopOf="@+id/cardView7" />
+
+    <TextView
+        android:id="@+id/friendwords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="念念不忘，必有回响"
+        android:textColor="@color/wx_galary"
+        app:layout_constraintStart_toStartOf="@+id/friendname"
+        app:layout_constraintTop_toBottomOf="@+id/friendname" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/friendtomess"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/linebutton"
+        android:clickable="true"
+        app:layout_constraintTop_toBottomOf="@+id/friendwords"
+        tools:layout_editor_absoluteX="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linebutton"
+                android:clickable="true"
+                android:src="@drawable/messs" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送消息"
+                android:textColor="@color/wx_black"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cleanmess"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/linebutton"
+        android:clickable="true"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:layout_editor_absoluteX="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="0dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linebutton"
+                android:clickable="true"
+                android:src="@drawable/rubbish" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清空聊天"
+                android:textColor="@color/wx_black"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/delmessage"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/linebutton"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cleanmess">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除联系人"
+                android:textColor="@color/wx_red"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/wx_back"
+        app:layout_constraintTop_toBottomOf="@+id/friendtomess" />
+</androidx.constraintlayout.widget.ConstraintLayout>

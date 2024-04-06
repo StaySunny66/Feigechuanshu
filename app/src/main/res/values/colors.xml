@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF07c160</color>
+    <color name="purple_700">#FF07c160</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="wx_white">#FFF7F7F7</color>
+    <color name="wx_galary">#FF636363</color>\
+    <color name="wx_green">#FF07c160</color>
+    <color name="wx_back">#FFEDEDED</color>
+    <color name="wx_black">#FF171717</color>
+    <color name="wx_warring">#FFFFDE00</color>
+    <color name="wx_galary_small">#C8636363</color>
+    <color name="wx_red">#C1FF2424</color>
+
+
+</resources>

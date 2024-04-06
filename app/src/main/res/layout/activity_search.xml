@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/wx_back"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <EditText
+        android:id="@+id/searcheditTextText"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/yuanjiaomessage"
+        android:ems="10"
+        android:hint="搜索"
+        android:textColorHint="@color/wx_galary_small"
+        android:inputType="text"
+        android:paddingLeft="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchrec"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searcheditTextText" />
+
+    <TextView
+        android:id="@+id/searback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textSize="16sp"
+        android:textColor="@color/wx_green"
+        app:layout_constraintBottom_toBottomOf="@+id/searcheditTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searcheditTextText"
+        app:layout_constraintTop_toTopOf="@+id/searcheditTextText" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/searcheditTextText"
+        app:layout_constraintStart_toStartOf="@+id/searcheditTextText"
+        app:layout_constraintTop_toTopOf="@+id/searcheditTextText"
+        app:srcCompat="@drawable/search_search" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
